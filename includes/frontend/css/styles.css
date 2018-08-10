@@ -1,0 +1,1368 @@
+.header-location a:visited {
+    color:#fff;
+}
+#gssi-wrap{
+    margin:-40px -30px 0;
+    background:#ffffff;
+}
+
+.gssi-store-below #gssi-location-gmap {
+    float:none;
+    width:100%;
+}
+
+.gssi-location-gmap-canvas {
+   height: 250px;
+   display:inline-block;
+   vertical-align:top;
+   width:100%;
+}
+
+#gssi-reset-map:hover {
+    cursor: pointer;
+}
+#gssi-wrap article{
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    padding-bottom:117px;
+}
+#gssi-wrap article ul{
+    margin:0;
+    padding:0 78px;
+}
+#gssi-wrap article ul li{
+    list-style:none;
+    width:100%;
+    float:left;
+    border-bottom:1px solid #e8e8e8;
+    padding:25px 0;
+}
+#gssi-wrap article ul li .gssi-direction-wrap .gssi-directions{
+    display:none;
+}
+#gssi-wrap article ul li .ricky-action .btn,a.change-location.buttons{
+    min-width:94px;
+    height:37px;
+    text-align:center;
+    background:#000000;
+    color:#ffffff;
+    text-transform:uppercase;
+    border:none;    
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    line-height: 37px;
+    padding: 0 20px;
+}
+#gssi-wrap article ul li h3.location-header,
+#gssi-wrap article ul li .gssi-location-location{
+    display:inline-block;
+    vertical-align:top;
+}
+#gssi-wrap article ul li h3.location-header{
+    width:20%;
+    float:left;
+    margin:0;
+}
+#gssi-wrap article ul li h3.location-header a{
+    text-transform:uppercase;
+    font-size:20px;
+    letter-spacing:0.2px;
+}
+#gssi-wrap article ul li .gssi-location-location{
+    width:80%;
+    float:left;
+}
+#gssi-wrap article ul li .gssi-location-location .address,
+#gssi-wrap article ul li .gssi-location-location .contact-directions,
+#gssi-wrap article ul li .gssi-location-location .ricky-action{
+    width:25%;
+    float:left;
+    padding:0 25px;
+    line-height:39px;
+}
+#gssi-wrap article ul li .gssi-location-location .address{
+    width:50%;
+}
+#gssi-wrap article ul li .gssi-location-location .contact-directions{
+    
+}
+#gssi-wrap article ul li .gssi-location-location{
+    
+}
+#gssi-wrap article ul li .gssi-location-location .ricky-action{
+    float:right;
+    text-align:right;
+    padding-right:0;
+}
+.locations-detail-content .location-address{
+    margin-bottom:20px;
+} 
+.locations-detail-content  i{
+    margin-right:5px;
+}
+.locations-detail-content .actions-toolbar ul{
+    padding-left:0;
+}
+.locations-detail-content .actions-toolbar ul li{
+    list-style:none;
+}
+.locations-detail-content {
+    padding-bottom:30px;
+}
+.locations-detail-content .single-direction{
+    padding:20px 0;
+}
+@media (min-width:768px){
+    .locations-detail-content  .col.summary{
+        width:40%;
+        float:left;
+    }
+    .locations-detail-content .col.map{
+        width:60%;
+        float:left;
+    }
+}
+@media only screen and (max-width: 767px){
+#side-header {
+        position:relative!important;
+    }
+}
+/* Fix an overlay issue with the map style */
+.gmnoprint,
+.gm-style-mtc {
+    z-index: 9999 !important;    
+}
+
+/* 
+Some themes set a box-shadow or max-width for all image / 
+div elements, we disable it to prevent it from messing up the map
+
+The .gv-iv- class is used in streetview, and they should not be included.
+*/
+#gssi-location-gmap div:not[class^="gv-iv"],
+#gssi-location-gmap img,
+.gssi-location-gmap-canvas div:not[class^="gv-iv"],
+.gssi-location-gmap-canvas img {
+    box-shadow: none !important;
+    max-width: none !important;
+    background: none;
+}
+
+#gssi-location-gmap img,
+.gssi-location-gmap-canvas img {
+    display: inline !important;
+    opacity: 1 !important;
+    max-height: none !important;
+}
+
+
+
+/*
+Fix a problem where the background color used
+in street view mode doesn't cover the control area.
+*/
+
+
+#gssi-location-gmap div.gm-iv-marker,
+.gssi-location-gmap-canvas div.gm-iv-marker {
+    backgroud-image: inherit;
+}
+
+.closest-location {
+    float:left;
+    width: 68%;
+    margin-right: 2%;
+}
+#gssi-search-wrap{
+    float:left;
+    width:100%;
+}
+#gssi-search-wrap form {
+    margin: 0;
+    /*padding: 39px 75px;*/
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+}
+/*#gssi-search-wrap form .input-text-span{*/
+    /*width:465px;*/
+    /*max-width:50%;*/
+/*}*/
+#gssi-search-wrap form input[type="submit"]{
+    min-width:94px;
+    height:37px;
+    text-align:center;
+    background:#000000;
+    color:#ffffff;
+    text-transform:uppercase;
+    border:none;
+    border-radius: 3px;
+}
+#gssi-search-wrap form input[type="checkbox"]{
+    height:17px;
+    width:17px;
+    margin:10px 0;
+}
+#gssi-search-wrap form input#gssi-search-input{
+    height:40px;
+    width:100%;
+    border:1px solid #cfcfcf;
+}
+.gssi-location-search-wrap span{
+    /*float:left;*/
+    /*margin-right:35px;*/
+}
+.gssi-location-search-wrap span span{
+    display:block;
+    margin-bottom: 10px;
+    /*vertical-align:top;*/
+}
+/* Map Controls */
+#gssi-location-gmap #gssi-map-controls {
+    position: absolute;
+    height: 28px;
+    right: 10px;
+    bottom: 24px;
+    border-radius: 2px;
+    z-index: 3;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#gssi-location-gmap #gssi-map-controls.gssi-street-view-exists {
+    right: 48px;
+}
+
+#gssi-map-controls .gssi-direction-preloader {
+    margin: 5px 5px 0 5px;
+}
+
+#gssi-map-controls div {
+    float: left;
+    background: #fff;
+    border-radius: 2px;
+}
+
+#gssi-map-controls div:hover {
+    cursor: pointer;
+}
+ 
+#gssi-wrap [class^="gssi-icon-"], 
+#gssi-wrap [class*=" gssi-icon-"] {
+    position: relative;
+    float: left;
+    padding: 7px 9px 7px 8px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #737373;
+    speak: none;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+ * Make sure the CSS from a theme doesn't set a different font family, or font size
+ * for the font icons. Otherwise the icons either don't show, or are to large.
+ */
+#gssi-map-controls span {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Fix the padding for the icon fonts in IE 8-11 :( */
+#gssi-wrap .gssi-ie [class^="gssi-icon-"],
+#gssi-wrap .gssi-ie [class*=" gssi-icon-"] {
+    padding: 9px 8px 4px 8px;
+}
+
+/* Make the clickable area bigger for the buttons on mobile devices */
+#gssi-wrap.gssi-mobile [class^="gssi-icon-"],
+#gssi-wrap.gssi-mobile [class*=" gssi-icon-"] {
+   padding: 8px 10px;
+}
+
+#gssi-wrap .gssi-icon-reset {
+    border-radius: 2px 0 0 2px;
+    z-index: 2;
+    padding-left: 9px;
+    padding-right: 4px;
+}
+
+#gssi-wrap .gssi-icon-direction {
+    z-index: 1;
+}
+
+#gssi-map-controls.gssi-reset-exists .gssi-icon-direction {
+    border-radius: 0 2px 2px 0;    
+}
+
+#gssi-wrap .gssi-active-icon,
+#gssi-wrap [class^="gssi-icon-"]:hover,
+#gssi-wrap [class*=" gssi-icon-"]:hover {
+    color: #000;
+}
+
+#gssi-wrap [class^="gssi-icon-"]:active,
+#gssi-wrap [class*=" gssi-icon-"]:focus {
+    outline: 0;
+}
+
+#gssi-wrap .gssi-in-progress:hover,
+#gssi-wrap .gssi-in-progress {
+    color: #c6c6c6;
+}
+
+/* Map reset button */
+#gssi-location-gmap #gssi-reset-map {
+    position: absolute; 
+    display: none;
+    right: 37px; 
+    top: 37px; 
+    padding: 6px 14px; 
+    background: #fff !important; 
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    z-index: 3;
+}
+
+#gssi-reset-map:hover {
+    cursor: pointer;
+}
+
+/* Possible fix for vertical text issue in IE9? */
+.gm-style-cc {
+    word-wrap:normal;
+}
+
+
+.gssi-search.gssi-checkboxes-enabled {
+    padding: 12px;
+}
+
+/* Result list */
+.gssi-back {
+    display: inline-block;
+}
+
+#gssi-result-list {
+    /*margin-right:0.5%;*/
+}
+
+.gssi-store-below #gssi-result-list {
+    width:100%;
+    margin:12px 0 0 0;
+}
+
+#gssi-stores, 
+#gssi-direction-details {
+    height:350px;
+    overflow-y:auto;
+}
+
+.gssi-hide,
+#gssi-direction-details {
+    display:none;
+}
+
+#gssi-result-list p {
+    padding-left:10px;
+}
+.gssi-store-below #gssi-result-list p {
+    padding-left: 0;
+}
+
+#gssi-result-list a {
+    outline:none;
+}
+
+.gssi-direction-before {
+    margin: 14px 0 21px 0;
+    padding-left: 10px;
+}
+
+.gssi-store-below .gssi-direction-before {
+    padding-left: 0;
+}
+
+.gssi-direction-before div {
+    margin-top: 10px;
+}
+
+
+
+#gssi-wrap.gssi-store-below #gssi-result-list li {
+    padding: 10px 10px 10px 0;
+}
+
+#gssi-result-list li p {
+    padding-left: 0;
+    margin: 0 0 20px 0;
+}
+
+.gssi-store-details.gssi-store-listing {
+    position: relative;
+    padding-right: 20px;
+}
+
+.gssi-store-details.gssi-store-listing:before,
+.gssi-store-details.gssi-store-listing.gssi-active-details:before {
+    position: absolute;
+    content: '';
+    bottom:6px;
+    right:0;
+    border-top: 5px solid #000000;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+}
+
+.gssi-store-details.gssi-store-listing.gssi-active-details:before {
+    border-bottom: 5px solid #000000;
+    border-top:none;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);   
+}
+
+#gssi-stores .gssi-store-thumb {
+    float:right;
+    border-radius:3px;
+    margin:7px 0 0 10px;
+    padding:0;
+    border:none;
+}
+
+.gssi-direction-index {
+    float:left; 
+    width:8%; 
+    margin:0 5% 0 0;
+}
+
+.gssi-direction-txt {
+    float:left; 
+    width:62%;
+}
+
+.gssi-direction-distance {
+    float:left; 
+    width:20%; 
+    margin:0 0 0 5%;
+}
+
+.gssi-direction-txt span {
+    display:block; 
+    margin-top:10px;
+}
+
+
+
+.gssi-directions {
+    display: table;
+    border-bottom: none !important;
+}
+
+/* Preloader */
+#gssi-wrap #gssi-result-list li.gssi-preloader {
+    position: relative;
+    border-bottom: none;
+    padding: 10px 10px 10px 35px;
+}
+
+.gssi-preloader img {
+    position: absolute;
+    left: 10px;    
+    top: 50%;
+    margin-top: -8px;
+    box-shadow:none !important; 
+    border:none !important;
+}
+
+.gssi-preloader span {
+    float: left;
+    margin: -5px 0 0 11px;	
+}
+
+
+
+#gssi-radius, #gssi-results {
+    float: left;
+    margin-right: 15px;	
+}
+
+#gssi-category {
+    position: relative;
+    z-index: 1;
+    clear: both;
+}
+
+#gssi-search-wrap .gssi-dropdown div {
+    position: absolute;
+    float: none;
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    border: 1px solid #ccc;
+    background: #fff;    
+    border-top: 1px solid #eee;
+    border-radius: 0 0 3px 3px;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#gssi-search-wrap .gssi-dropdown.gssi-active div {
+    opacity: 1;
+}
+
+#gssi-search-wrap .gssi-input label {
+    margin-right:0;
+}
+
+#gssi-radius, #gssi-results {
+    display:inline;
+}
+
+#gssi-radius {
+    margin-right:10px;
+}
+
+
+#gssi-search-wrap select, 
+#gssi-search select {
+    display:none;
+}
+
+#gssi-results label {
+   width: auto;
+}
+
+.gssi-direction-details {
+    display: none;
+}
+
+/* Infowindow */
+
+
+.gssi-info-window .gssi-no-margin {
+    margin:0;
+}
+
+/* More info details in the store listings */
+.gssi-more-info-listings {
+    display:none;
+}
+
+/* Fix for Google Voice breaking the phone numbers */
+.gssi-info-window span span {
+    display:inline !important;
+}
+
+#gssi-wrap .gssi-info-window p {
+    margin: 0 0 10px 0;
+}
+
+.gssi-store-hours {
+    margin-top:10px;
+}
+
+.gssi-store-hours strong {
+    display:block;
+}
+
+#gssi-location-gmap .gssi-info-actions {
+    display:block;
+    margin:10px 0 !important;   
+}
+
+.gssi-info-actions a {
+    float:left;
+    margin-right: 7px;
+}
+
+.gssi-info-actions .gssi-zoom-here {
+    margin-right:0;
+}
+
+/* --- dropdowns --- */
+.gssi-dropdown {
+    position: relative;
+    width: 90px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    margin-right: 0 !important;
+    z-index: 2;
+}
+
+#gssi-results .gssi-dropdown {
+    width: 70px;
+}
+
+.gssi-dropdown ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+    overflow: hidden;
+}
+
+.gssi-dropdown:hover {
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.15 );	
+}
+
+.gssi-dropdown .gssi-selected-item,
+.gssi-dropdown li {
+    position: relative;
+    display: block;
+    line-height: normal;
+    color: #000;
+    overflow: hidden;
+}
+
+#gssi-radius .gssi-dropdown .gssi-selected-item,
+#gssi-radius .gssi-dropdown li,
+#gssi-results .gssi-dropdown .gssi-selected-item,
+#gssi-results .gssi-dropdown li {
+    white-space: nowrap;
+}
+
+.gssi-selected-item:after {
+    position: absolute;
+    content: "";
+    right: 12px;
+    top: 50%;
+    margin-top: -4px;
+    border: 6px solid transparent;
+    border-top: 8px solid #000;
+}
+
+.gssi-active .gssi-selected-item:after {
+    margin-top: -10px;
+    border: 6px solid transparent;
+    border-bottom: 8px solid #000;	
+}
+
+.gssi-dropdown li:hover {
+    background: #f8f9f8;
+    position: relative;
+    z-index: 3;
+    color: #000;
+}
+
+.gssi-dropdown .gssi-selected-item,
+.gssi-dropdown li,
+.gssi-selected-item {
+    list-style: none;
+    padding: 9px 12px !important;
+    margin:0 !important;   
+}
+
+.gssi-selected-dropdown {
+    font-weight: bold;	
+}
+
+.gssi-clearfix:before,  
+.gssi-clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+
+.gssi-clearfix:after {  
+    clear: both;  
+} 
+
+#gssi-wrap .gssi-selected-item {
+    position: static;
+    padding-right: 35px !important;
+}
+
+#gssi-category, 
+.gssi-input, 
+.gssi-select-wrap {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#gssi-search-wrap .gssi-scroll-required div {
+    overflow-y: scroll;
+}
+
+.gssi-scroll-required ul {
+    overflow: visible;
+}
+
+.gssi-provided-by {
+    float: right;
+    padding: 5px 0;
+    text-align: right;
+    font-size: 12px;
+    width: 100%;
+}
+
+#gssi-wrap .gssi-results-only label {
+    width: auto;
+}
+
+/* gssi custom post type pages */
+
+
+.gssi-contact-details {
+    clear: both;
+}
+
+
+
+table.gssi-opening-hours time {
+    display:block;
+}
+
+table.gssi-opening-hours {
+    width:auto !important;
+    font-size:100% !important;
+}
+
+table.gssi-opening-hours,
+table.gssi-opening-hours td {
+    border:none !important;    
+}
+
+/* Custom Infobox */
+.gssi-location-gmap-canvas .gssi-infobox {
+    min-width:155px;
+    max-width:350px !important;
+    padding:10px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:300;
+    border:1px solid #ccc;
+    background:#fff !important;
+}
+
+.gssi-location-gmap-canvas .gssi-infobox:after,
+.gssi-location-gmap-canvas .gssi-infobox:before {
+    position:absolute;
+    content:"";	
+    left:40px;
+    bottom:-11px;	
+}
+
+.gssi-location-gmap-canvas .gssi-infobox:after {
+    border-left:11px solid transparent;
+    border-right:11px solid transparent;
+    border-top:11px solid #fff;	
+}
+
+.gssi-location-gmap-canvas .gssi-infobox:before {
+    border-left:13px solid transparent;
+    border-right:13px solid transparent;
+    border-top:13px solid #ccc;
+    bottom:-13px;
+    left:38px;
+}
+
+
+.gssi-info-window .ricky-action {
+    float: none;
+    padding-top: 10px;
+    clear:both;
+}
+
+
+#gssi-checkbox-filter,
+.gssi-custom-checkboxes {
+    display: block;
+    float: left;
+    margin: 5px 0 15px;
+    padding: 0;
+    width: 100%;
+}
+
+#gssi-checkbox-filter li,
+.gssi-custom-checkboxes li {
+    float: left;
+    list-style: none;
+    margin: 0 1% 0 0;
+}
+
+#gssi-checkbox-filter.gssi-checkbox-1-columns li,
+.gssi-custom-checkboxes.gssi-checkbox-1-columns li {
+    width: 99%;    
+}
+
+#gssi-checkbox-filter.gssi-checkbox-2-columns li,
+.gssi-custom-checkboxes.gssi-checkbox-2-columns li {
+    width: 49%;    
+}
+
+#gssi-checkbox-filter.gssi-checkbox-3-columns li,
+.gssi-custom-checkboxes.gssi-checkbox-3-columns li {
+    width: 32%;    
+}
+
+#gssi-checkbox-filter.gssi-checkbox-4-columns li,
+.gssi-custom-checkboxes.gssi-checkbox-4-columns li {
+    width: 24%;    
+}
+
+#gssi-checkbox-filter input,
+.gssi-custom-checkboxes input {
+    margin-right: 5px;
+}
+
+#gssi-result-list .gssi-contact-details span {
+    display: block !important;
+}
+/*
+	layout location details
+*/
+.location-detail-article{
+	position:relative;	
+}
+.location-detail-article .section-1{
+	width:100%;
+	max-width:970px;
+	margin:0 auto;
+	position:absolute;
+	left:50%;
+	top:0;
+	transform:translateX(-50%);
+	z-index:99;
+	background:#333335;
+}
+.location-detail-article .section-1 .top-content-section{
+	padding:30px;	
+	margin-top: -146px;
+    position: relative;
+    z-index: 9999999;
+    background: #333335;
+}
+.location-detail-article .section-1 .top-content-section h2{
+	color:#ffffff;
+	width:30%;
+	display:inline-block;
+	vertical-align:top;
+	font-size:30px;
+}
+.location-detail-article .section-1 .top-content-section .section-text{
+	width:70%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.location-detail-article .section-1 .top-content-section .section-text ,
+.location-detail-article .section-1 .top-content-section .section-text p,
+.location-detail-article .section-1 .top-content-section .section-text span,
+.location-detail-article .section-1 .top-content-section .section-text a{
+	font-size:14px;
+	color:#fff;
+}
+button.header-location-button{
+	position: relative;
+    font-family: "Mitr","Arial",sans-serif;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 20px;
+    margin-left: 0;
+}
+button.change-location {
+	position: relative;
+    font-family: "Mitr","Arial",sans-serif;
+    background: transparent;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 20px;
+    margin-left: 10px;
+	border:1px solid #dddddd;
+}
+/*.location-detail-article .section-1 .top-content-section .section-text  .actions-button{
+	padding-top:10px;
+}
+.location-detail-article .entry-title{
+
+}
+.location-detail-article .section-2 .content-top-wrap:before{
+	height:40px;
+	background:#b40000;
+	content:"";
+	width:100%;
+	display:inline-block;
+	vertical-align:top;
+}
+.location-detail-article .entry-title{
+	background:none;
+	float:left;
+	line-height: 1;
+    margin: 0;
+    padding: 14px 0;
+}
+.location-detail-article .entry-title:after{
+	display:none;
+}
+.location-detail-article .section-2 .content-top-wrap{
+	background:url(../img/paper-tile.jpg) 0 0 repeat-x;
+	display: inline-block;
+    width: 100%;
+	vertical-align:top;
+}
+.custom-container{
+	max-width:1210px;
+	margin:0 auto;
+	padding:0 20px;
+}
+.location-detail-article .section-2 .actions-section{
+	float:right;	
+	padding:20px 0;
+}
+.location-detail-article button.view-menu{
+	position: relative;
+    font-family: "Mitr","Arial",sans-serif;
+    background: #B40001;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 20px;
+    margin-left: 0;
+}
+.location-detail-article button.delivery{
+	position: relative;
+    font-family: "Mitr","Arial",sans-serif;
+    background: transparent;
+    color: #B40001;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 20px;
+    margin-left: 10px;
+	border:1px solid #000000;
+}
+.locations-detail-section{
+	padding-top:20px;	    
+	width: 100%;
+    display: inline-block;
+	vertical-align:top;
+	padding-bottom:30px;
+}
+.locations-detail-section .col-left,
+.locations-detail-section .col-right{
+	width:50%;
+	padding:0;
+	float:left;
+}
+.locations-detail-section .lai-content{
+	width:35%;
+	float:left;
+}
+.locations-detail-section .gssi_hours{
+	width:65%;
+	float:left;
+}
+.locations-detail-section .entry-custom-title{
+	position:relative;	
+}
+.locations-detail-section button.change-location {
+	border:none;
+	text-decoration:underline;
+	color:#B40001;
+	text-transform:capitalize;
+}
+.locations-detail-section .entry-custom-title:after{
+	content:"";
+	width:70px;
+	height:1px;
+	background:#000000;
+	position:absolute;
+	left:0;
+	bottom:-5px;
+	display:inline-block;
+}
+.locations-detail-section .actions-toolbar {
+    clear:both;
+}
+.locations-detail-section .socials a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+}
+@media (max-width: 970px) {
+	.location-detail-article .section-1 .top-content-section{
+		margin-top:0;
+	}
+}*/
+@media (max-width: 825px) {
+    #gssi-search-input {
+        width: 348px;
+    }
+
+    .gssi-results-only #gssi-search-wrap .gssi-dropdown {
+        width: 70px;
+    }
+    
+    #gssi-search-wrap .gssi-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .gssi-input label,
+    #gssi-radius label,
+    #gssi-category label,
+    .gssi-cat-results-filter #gssi-search-wrap .gssi-input,
+    .gssi-no-filters #gssi-search-wrap .gssi-input,
+    .gssi-results-only #gssi-search-wrap .gssi-input {
+        width: auto;
+    }
+}
+
+/*@media (max-width: 767px) {
+	.location-detail-article .section-1 .top-content-section h2,
+	.location-detail-article .section-1 .top-content-section .section-text,
+	.locations-detail-section .gssi_hours,
+	.locations-detail-section .lai-content{
+		width:100%;
+	}
+}*/
+@media (max-width: 720px) {
+    #gssi-search-wrap .gssi-dropdown {
+        width: 114px;
+    }
+}
+
+@media (max-width: 675px) {
+    
+
+    .gssi-results-only #gssi-search-wrap .gssi-input,
+    .gssi-dropdown {
+        width: 100%;
+    }
+    
+    .gssi-search {
+        padding: 2%;
+    }
+
+    .gssi-input {
+        margin-right: 0;
+    }
+
+    #gssi-result-list,
+    #gssi-location-gmap {
+        width:49.75%;
+    }
+    
+    #gssi-result-list,
+    #gssi-location-gmap {
+        float: none;
+        width: 100%;
+    }
+    
+    .gssi-direction-before {
+        padding-left: 0;
+    }
+    
+    #gssi-location-gmap {
+        margin-bottom: 15px;
+    }
+    
+    .gssi-cat-results-filter .gssi-select-wrap,
+    .gssi-filter .gssi-select-wrap,
+    #gssi-result-list {
+        margin-bottom: 10px;
+    }
+
+    #gssi-result-list p,
+    #gssi-wrap #gssi-result-list li {
+        padding-left: 0;
+    }
+    
+    #gssi-wrap #gssi-result-list li.gssi-preloader {
+        padding-left: 25px;
+    }
+    
+    .gssi-preloader img {
+        left: 0;
+    }
+
+    #gssi-stores.gssi-not-loaded {
+        height: 25px;
+    }
+
+    #gssi-reset-map {
+        top: 25px;
+    }
+
+ 
+
+   
+
+    #gssi-stores.gssi-no-autoload {
+        height: auto !important;
+    }
+
+    #gssi-checkbox-filter.gssi-checkbox-3-columns li,
+    #gssi-checkbox-filter.gssi-checkbox-4-columns li {
+        width: 49%;    
+    }
+}
+
+@media (max-width: 570px) {
+  
+
+    .gssi-search {
+        padding: 4%;
+    }
+    
+    #gssi-search-input {
+        width: 98% !important;
+    }
+    
+    .gssi-cat-results-filter #gssi-search-wrap .gssi-input,
+    .gssi-cat-results-filter #gssi-search-input,
+    .gssi-no-results #gssi-search-input, 
+    .gssi-results-only #gssi-search-input {
+        width: 100% !important;
+    }
+    
+    .gssi-search-btn-wrap {
+        margin-top: 15px;
+    }
+    
+    .gssi-checkboxes-enabled .gssi-search-btn-wrap {
+        margin-top: 0;
+    }
+    
+   
+
+    /*#gssi-search-wrap div label {*/
+        /*display: block;*/
+        /*width: 100%;*/
+    /*}*/
+
+    #gssi-results {
+        width:auto;
+    }
+    
+    .gssi-select-wrap {
+        width: 100%;
+    }
+    
+    #gssi-radius, 
+    #gssi-results {
+        width: 50%;
+    }
+    
+    #gssi-radius {
+        margin-right: 4%;
+    }
+    
+    #gssi-search-wrap .gssi-dropdown {
+        width: 96% !important;
+    }
+
+    .gssi-search-btn-wrap {
+        clear: both;
+    }
+
+    .gssi-no-filters #gssi-search-wrap .gssi-input,
+    .gssi-no-filters #gssi-search-input {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 420px) {
+    #gssi-checkbox-filter li {
+        margin: 0;
+    }
+    
+    #gssi-checkbox-filter.gssi-checkbox-1-columns li,
+    #gssi-checkbox-filter.gssi-checkbox-2-columns li,
+    #gssi-checkbox-filter.gssi-checkbox-3-columns li,
+    #gssi-checkbox-filter.gssi-checkbox-4-columns li {
+        width: 100%;    
+    }    
+}
+
+/*NTD Code*/
+#gssi-checkbox-filter{
+    margin-bottom: 0;
+}
+.gssi-location-gmap-canvas .gssi-info-window{
+    position: relative;
+    padding: 7px 15px;
+}
+.gssi-location-gmap-canvas .gssi-info-window .location-header{
+    margin-top:0;
+    margin-bottom: 5px;
+}
+.gssi-location-gmap-canvas .gssi-info-window .location-header a{
+    color:#1e75ab;
+    text-transform: uppercase;
+}
+.gssi-location-gmap-canvas .gssi-info-window .gssi-info-actions{
+    position: absolute;
+    bottom:5px;
+    left:124px;
+}
+.gssi-location-gmap-canvas .gssi-info-window .gssi-info-actions a{
+    color:#1e75ab;
+    text-transform: uppercase;
+}
+.gssi-location-gmap-canvas .gssi-info-window .gssi-info-actions a i{
+    color:black;
+    font-size: 24px;
+    position: relative;
+    top: 2px;
+    margin-right: 7px;
+}
+.gssi-location-gmap-canvas .gssi-info-window .ricky-action a{
+    min-width: 94px;
+    height: 37px;
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    padding:0;
+    line-height: 37px;
+}
+/*#side-header{*/
+    /*display: none;*/
+/*}*/
+.page-id-1306 #content{
+    margin-bottom: 0;
+}
+.page-id-1306 #main{
+    padding-bottom: 0;
+}
+@media (min-width: 768px){
+    #gssi-search-wrap form{
+        padding: 39px 75px;
+    }
+}
+@media (min-width: 992px) {
+    .gssi-location-gmap-canvas{
+        height: 400px;
+    }
+}
+@media (min-width: 1200px){
+    .gssi-location-gmap-canvas{
+        height: 600px;
+    }
+    .gssi-input{
+        display: flex;
+        margin-bottom: 0;
+    }
+    .gssi-location-search-wrap{
+        flex: 0 0 calc(100% - 94px);
+        padding-right: 30px;
+    }
+    .gssi-search-btn{
+        flex: 0 0 94px;
+    }
+    .gssi-location-search-wrap span span{
+        display: inline-block;
+        margin-right: 35px;
+    }
+}
+@media (min-width: 1500px) {
+    .gssi-location-search-wrap{
+        flex: 0 0 auto;
+    }
+    .gssi-location-search-wrap span{
+        float: left;
+        margin-right: 35px;
+    }
+    .gssi-location-search-wrap .input-text-span{
+        width: 465px;
+    }
+    .gssi-location-search-wrap .input-text-span span{
+        margin-bottom: 0;
+    }
+
+    #gssi-checkbox-filter{
+        width: calc(100% - 500px);
+        margin-bottom: 0;
+    }
+    #gssi-checkbox-filter span:last-child{
+        margin-right: 0;
+    }
+    #gssi-search-wrap form input[type="submit"]{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    #gssi-wrap article ul li{
+        padding:20px 0;
+    }
+    #gssi-wrap article ul li h3.location-header{
+        width: 100%;
+        float:none;
+    }
+    #gssi-wrap article ul li .gssi-location-location{
+        width: 100%;
+        float:none;
+    }
+    #gssi-wrap article ul li .gssi-location-location .contact-directions{
+        width: 50%;
+    }
+    #gssi-wrap article ul li .gssi-location-location .ricky-action{
+        width: 100%;
+        float:none;
+        clear: both;
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    #gssi-wrap article{
+        padding-bottom: 30px;
+    }
+    #gssi-wrap article ul{
+        padding: 0 15px;
+    }
+    #gssi-wrap article ul li{
+        padding-top:0;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
+    #gssi-wrap article ul li .gssi-location-location{
+        float:none;
+        width: 100%;
+    }
+    #gssi-wrap article ul li h3.location-header,
+    #gssi-wrap article ul li .gssi-location-location .address,
+    #gssi-wrap article ul li .gssi-location-location .contact-directions,
+    #gssi-wrap article ul li .gssi-location-location .ricky-action{
+        width: 100%;
+        float:none;
+    }
+    #gssi-wrap article ul li .gssi-location-location .ricky-action{
+        text-align: left;
+    }
+}

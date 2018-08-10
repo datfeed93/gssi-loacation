@@ -1,0 +1,659 @@
+#gssi-location-overview .widefat td,
+#gssi-wrap .widefat td {
+    padding: 12px 7px;
+}
+
+#gssi-wrap.gssi-settings h2 {
+    margin-bottom: 15px;
+}
+
+#gssi-wrap .submit {
+    padding: 0!important;
+    margin-bottom: -10px !important;
+}
+
+#gssi-location-overview .column-action a {
+    float: left;
+    margin-right: 5px;
+}
+
+#gssi-location-overview p.search-box {
+    margin: 0 0 1em 0;
+}
+
+.column-action { 
+    width:130px;
+}
+
+#gssi-delete-confirmation, 
+.gssi-hide {
+    display:none;
+}
+
+.gssi-preloader {
+    float:right;
+    margin:4px 0 0 4px;
+}
+
+/* Plugin nav */
+#gssi-mainnav {
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    margin-bottom: 15px;
+    padding-left: 7px;
+    width: 99.4%;
+}
+#gssi-mainnav li a {
+    display: block;
+    padding: 9px 12px;
+    text-decoration: none;
+}
+
+#gssi-mainnav li {
+    float: left;
+    margin: 0;
+}
+
+#gssi-wrap.gssi-add-locations label,
+#gssi-wrap label {
+    width:85px;
+    margin-top:6px;
+}
+
+#gssi-wrap.gssi-add-locations label {
+    float:left;
+}
+#gssi-wrap.gssi-add-locations p {
+    overflow:hidden;
+}
+#gssi-wrap.gssi-add-locations .gssi-radioboxes label {
+    float:none;
+    margin-right:10px;
+} 
+
+#gssi-wrap textarea {
+    width:489px;
+    resize:none;
+}
+
+.gssi-tab #gssi-hours, #gssi-wrap textarea  {
+    height: 185px;
+}
+
+/* Todo uitzoeken voor textarea width */
+#gssi-wrap .gssi-style-input textarea {
+    width: 509px;
+    resize: none;
+    margin-bottom: 12px;
+    height: 165px;
+}
+
+#gssi-style-preview {
+    float: left;
+    margin-bottom: 12px;
+}
+
+.gssi-style-preview-error {
+    float: left; 
+    margin: 6px 0 0 10px; 
+    color: #b91111;
+}
+
+.gssi-curve {
+    float: left;
+    border-radius: 3px;
+}
+
+#gssi-wrap.gssi-settings .gssi-error,
+.gssi-location-meta .gssi-error {
+    border: 1px solid #c01313;
+}
+
+#gssi-lookup-location {
+    margin-bottom: 7px;
+}
+
+#gssi-wrap input[type=text],
+#gssi-wrap input[type=email],
+#gssi-wrap input[type=url] {
+    width:340px;
+}
+
+#gssi-api-region,
+#gssi-wrap.gssi-settings input[type=text].textinput {
+    width:255px;
+}
+
+.gssi-add-location {
+    float:left; 
+    width:100%; 
+    clear:both; 
+}
+
+#gssi-wrap .metabox-holder {
+    float:left; 
+    margin-right:20px;
+}
+#gssi-wrap .metabox-holder.gssi-wide {
+    width:100%;
+    padding-top:0;
+}
+
+#gssi-wrap .gssi-edit-header {
+    margin-bottom:12px;
+}
+
+#gssi-wrap.gssi-settings .metabox-holder {
+    width:100%;
+}
+
+#gssi-wrap.gssi-settings .metabox-holder h3:hover {
+    cursor: auto;
+}
+
+#gssi-gmap-wrap {
+    float: left; 
+    width: 100%; 
+    height: 250px;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#gssi-map-preview #gssi-gmap-wrap {
+    margin: 6px 0 12px 0;
+}
+
+#gssi-gmap-wrap.gssi-styles-preview {
+    float: none;
+    margin: 0;
+    border-radius: 0;
+    clear: both;
+}
+
+#gssi-style-url {
+    display: none;
+    margin: 20px 0 0 0;
+}
+
+/* Markers */
+.gssi-marker-list {
+    overflow: hidden;
+}
+.gssi-marker-list li {
+    float: left; 
+    padding: 10px; 
+    margin-right: 5px;
+    text-align: center;
+}
+.gssi-marker-list li input[type="radio"] {
+    margin-right: 0;
+}
+.gssi-marker-list img {
+    display: block;
+    margin-bottom: 7px;
+}
+.gssi-marker-list li:hover,
+.gssi-active-marker {
+    background: #E4E4E4; 
+    border-radius:5px;
+    cursor: pointer;
+}
+
+/* Settings page */
+#gssi-license-form .postbox-container,
+#gssi-settings-form .postbox-container {
+    width: 535px;
+    clear: both;
+}
+#gssi-wrap .metabox-holder {
+    padding-top: 0;
+}
+
+/* Tooltip */
+.gssi-info {
+    position: relative;
+    margin-left: 3px;
+}
+
+.gssi-info:before { 
+    content: '\f534'; 
+    font-size: 14px;
+    font-family: 'dashicons';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+}
+
+.gssi-info:hover {
+    cursor: pointer;
+}
+
+.gssi-info.gssi-required-setting:before {
+    color: #b91111;
+}
+
+.gssi-info-text {
+    position: absolute;
+    padding: 10px;
+    left: -29px;
+    bottom: 28px;
+    color: #eee;
+    min-width: 200px;
+    background: #222;
+    border-radius: 3px;
+    line-height: 1.4em;
+}
+
+#gssi-map-preview .gssi-info-text {
+    width: 175px;
+    min-width: 0;
+    left: -88px;
+}
+
+#gssi-map-preview .gssi-info-text::after {
+    left: auto;
+    right: 87px;
+}
+
+#gssi-map-preview .gssi-info {
+    position: absolute;
+    margin-left: 5px;
+    top: 5px;
+}
+
+.gssi-submit-wrap {
+    position: relative;
+    clear: both;
+}
+
+.gssi-search-settings .gssi-info-text {
+    white-space: nowrap;
+}
+
+.gssi-info-text:after {
+    position: absolute;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #222;	
+    content: "";	
+    left: 27px;
+    bottom: -10px;
+}
+
+.gssi-info-text a {
+    color: #fff;
+}
+
+#gssi-settings-form label {
+    position: relative;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0 10px 0 0;
+    width: 220px;
+}
+	
+#gssi-save-settings {
+    float: left; 
+    clear: both;
+}	
+#gssi-settings-form .gssi-radioboxes label {
+    float: none;
+    margin-right: 10px;
+    width: auto;
+}
+
+#gssi-faq dt {
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#gssi-faq dd {
+    margin-left: 0;	
+}
+
+#gssi-faq dl {
+    margin-bottom: 25px;	
+}
+
+/* Overview page */
+.wp-list-table .column-action .button {
+    margin: 3px 5px 3px 0;
+}
+
+/* Custom post type */
+.gssi-location-meta p {
+    overflow: hidden;
+}
+
+.gssi-location-meta label,
+.gssi-location-meta legend {
+    float: left;
+    width: 95px;
+    margin-top: 3px;
+}
+
+.gssi-location-meta fieldset label {
+    display: inline-block;
+    line-height: 1.4em;
+    margin: 0.25em 0 0.5em !important;
+}
+
+.gssi-location-meta textarea,
+.gssi-location-meta input[type="text"], 
+.gssi-location-meta input[type="email"], 
+.gssi-location-meta input[type="url"] {
+    width: 340px;
+}
+
+.gssi-location-meta textarea {
+    resize: none;
+}
+
+#gssi-map-preview em,
+#gssi-settings-form em,
+.gssi-location-meta em {
+    display: block;
+}
+
+#gssi-settings-form .gssi-info em {
+    display: inline;
+}
+
+#gssi-meta-nav {
+    margin: 19px 0 6px 0;
+}
+
+#gssi-meta-nav li {
+    display:inline;
+    margin-right:5px;
+}
+
+#gssi-meta-nav li:hover {
+    cursor: pointer;
+}
+
+#gssi-meta-nav li a {
+    padding:6px 9px;
+    border-radius:3px 3px 0 0;
+    border-bottom: none;
+    text-decoration: none;
+    outline:none;
+}
+
+.gssi-tab {
+    padding:5px 15px;
+    display:none;
+    border: 1px solid #eee;
+    border-radius:0px 3px 3px 3px;
+}
+
+div.gssi-active {
+    display:block;
+    background: #fdfdfd;
+}
+
+#gssi-meta-nav .gssi-active a {
+    border:1px solid #eee;
+    border-bottom:1px solid #fdfdfd;
+    background: #fdfdfd;
+    color:#444;
+}
+
+.gssi-star {
+    color:#c01313;
+}
+
+/* Opening Hours */
+#gssi-location-hours {
+    border-collapse: collapse;
+    margin: 5px 0 20px 0;
+}
+
+#gssi-settings-form #gssi-location-hours {
+    width: 100%;
+}
+
+#gssi-location-hours div {
+    margin: 0;
+    padding: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+#gssi-location-hours .gssi-location-closed {
+    border: none;
+    background: none;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+.gssi-current-period,
+.gssi-add-period {
+    float: left;
+}
+
+#gssi-location-hours .gssi-multiple-periods {
+    float: left;
+    clear: both;
+    margin-top: 8px;
+}
+
+.gssi-add-period span,
+.gssi-current-period span {
+    float:left;
+    margin:6px 7px 0;
+}
+
+.gssi-add-period span {
+    margin:6px 0 0 7px;
+}
+
+#gssi-location-hours .gssi-remove-period {
+    background:#999;
+    border-radius: 9px;
+}
+
+.gssi-add-period {
+    border:none;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 3px 10px;
+}
+
+.gssi-default-hours {
+    margin-top:25px;
+}
+
+#gssi-location-hours select {
+    float:left;
+}
+
+#gssi-location-hours th {
+    text-align:left;
+    padding:8px 10px 8px 0;
+    border-bottom:1px solid #eee;
+}
+
+#gssi-settings-form #gssi-location-hours th {
+    text-align: left;
+}
+
+#gssi-location-hours td {
+    border-bottom:1px solid #eee;
+    padding:7px 10px 7px 0;
+    vertical-align: top;
+}
+
+#gssi-location-hours .gssi-opening-day {
+    min-width:80px;
+    padding:17px 17px 0 0;
+    text-align:left;
+    vertical-align:top;
+}
+
+.gssi-twentyfour-format .gssi-opening-hours {
+    width: 197px;
+}
+
+.gssi-twelve-format .gssi-opening-hours {
+    width: 245px;
+}
+
+#gssi-settings-form #gssi-location-hours .gssi-opening-day {
+    width: 150px;
+}
+
+#gssi-settings-form #gssi-location-hours td p  {
+    padding: 10px 0 0 0;
+    margin: 0;
+    text-align: left;
+}
+
+#gssi-location-hours .gssi-add-period {
+    height: 30px;
+}
+
+.gssi-pre-38 .gssi-add-period {
+    height: 27px;    
+}
+
+#gssi-location-hours .dashicons:hover,
+.gssi-add-period:hover {
+    cursor:pointer;
+}
+
+#gssi-location-hours .dashicons {
+    color: #999;
+    margin: 0 3px;
+}
+
+#gssi-location-hours .gssi-add-period:hover .dashicons,
+#gssi-location-hours .dashicons:hover {
+   color: #444; 
+}
+
+/* Fix the bottom spacing on the submit buttons */
+#gssi-wrap.gssi-pre-38 .submit {
+    margin-bottom: 0 !important;
+}
+
+/* Fontello fonts */
+[class^="gssi-icon-"]:before, [class*=" gssi-icon-"]:before {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'dashicons';
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="gssi-icon-"]:hover, [class*=" gssi-icon-"]:hover {
+    cursor: pointer;
+}
+
+.gssi-icon-location:before { 
+    content: '\e801'; 
+}
+
+.gssi-icon-attention-circled:before { 
+    content: '\e802'; 
+}
+
+.gssi-icon-cancel-circled:before { 
+    content: '\f153'; 
+}
+
+.gssi-icon-plus-circled:before {
+    content: '\f502'; 
+}
+
+#gssi-location-hours .gssi-icon-plus-circled,
+#gssi-location-hours .gssi-icon-cancel-circled {
+    margin-top: 1px;
+    font-size: 18px;
+    display: inline-block;
+    color: #999;
+}
+
+#gssi-location-hours .gssi-icon-plus-circled:hover,
+#gssi-location-hours .gssi-icon-cancel-circled:hover {
+    color: #444;
+}
+
+.gssi-add-on {
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 240px;
+    background: #fff;
+    margin: 20px 20px 0 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+.gssi-add-on p {
+    margin-top: 0;
+}
+
+.gssi-add-on img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.gssi-add-on > a {
+    width: 300px;
+    display: inline-block;
+}
+
+.gssi-add-on a img:hover {
+    opacity: 0.95;
+}
+
+.gssi-add-on .gssi-add-on-desc {
+    padding: 20px;    
+}
+
+.gssi-add-on-status {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.gssi-add-on-status p {
+    margin: 0 0 4px 0;
+}
+
+/* Classes to handle the API errors */
+.gssi-api-error {
+    margin-top: 13px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    background: #c01313;
+}
+
+.gssi-api-error a {
+    font-weight: bold;
+    color: #fff !important;
+}
